@@ -266,7 +266,7 @@ with col10:
     st.markdown('<p class="section-sub">Hubungan harga produk dengan nilai transaksi per kategori</p>', unsafe_allow_html=True)
     sample = dff.sample(min(1000, len(dff)), random_state=42)
     fig_scatter = px.scatter(sample, x='harga_asli_produk', y='subtotal_transaksi',
-        color='kategori_produk', size='jumlah_pembelian',
+        color='kategori_produk', 
         color_discrete_sequence=HIJAU,
         labels={'harga_asli_produk':'Harga Produk (Rp)',
                 'subtotal_transaksi':'Subtotal Transaksi (Rp)',
